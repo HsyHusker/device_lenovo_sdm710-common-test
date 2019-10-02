@@ -24,6 +24,9 @@ ro.vendor.fm.use_audio_session=true
 ro.com.google.ime.corner_key_r=35
 ro.com.google.ime.kb_pad_port_b=1
 
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
