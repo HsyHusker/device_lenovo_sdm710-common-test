@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CameraGo
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
