@@ -108,6 +108,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     BluetoothQti \
@@ -175,6 +177,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
+    libtinyxml.vendor \
     libvulkan \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
@@ -190,7 +193,29 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0 \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1 \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2 \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3 \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1 \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0 \
+    android.hardware.gnss@2.0.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -203,10 +228,16 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system \
+    android.hidl.allocator@1.0 \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -231,6 +262,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0 \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0 \
+    android.hardware.keymaster@4.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -288,7 +326,18 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor \
     netutils-wrapper-1.0
+
+# Neural Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1 \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
 
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
@@ -300,6 +349,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service.lenovo
 
 PRODUCT_COPY_FILES += \
@@ -319,15 +370,40 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     libjson \
+    libjson.vendor \
     librmnetctl
 
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
+
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0.vendor \
     libsensorndkbridge
 
 # Soong namespaces
