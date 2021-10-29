@@ -2,37 +2,37 @@
   {
     "repository": "vendor_lenovo_jd2019-common",
     "target_path": "vendor/lenovo/sdm710-common",
-    "branch": "dot11",
+    "branch": "dot12",
     "remote": "dotOS-Devices"
   },
   {
     "repository": "kernel_lenovo_jd2019",
     "target_path": "kernel/lenovo/sdm710",
-    "branch": "dot11",
+    "branch": "dot12",
     "remote": "dotOS-Devices"
   },
   {
     "repository": "vendor_lenovo-firmware",
     "target_path": "vendor/lenovo-firmware",
-    "branch": "dot11",
+    "branch": "dot12",
     "remote": "dotos-devices-gitlab"
   },
   {
-    "repository": "PixelExperience/hardware_qcom-caf_sdm845_media",
+    "repository": "HsyHusker/hardware_qcom-caf_sdm845_media",
     "target_path": "hardware/qcom-caf/sdm845-lenovo/media",
-    "branch": "eleven",
+    "branch": "12-test",
     "remote": "github"
   },
   {
-    "repository": "PixelExperience/hardware_qcom-caf_sdm845_audio",
+    "repository": "HsyHusker/hardware_qcom-caf_sdm845_audio",
     "target_path": "hardware/qcom-caf/sdm845-lenovo/audio",
-    "branch": "eleven",
+    "branch": "12-test",
     "remote": "github"
   },
   {
-    "repository": "PixelExperience/hardware_qcom-caf_sdm845_display",
+    "repository": "HsyHusker/hardware_qcom-caf_sdm845_display",
     "target_path": "hardware/qcom-caf/sdm845-lenovo/display",
-    "branch": "eleven",
+    "branch": "12-test",
     "remote": "github"
   }
 ]
