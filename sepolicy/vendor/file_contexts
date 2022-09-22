@@ -25,11 +25,5 @@
 /sys/ontim_bootinfo/gps_reset                u:object_r:sysfs_gps:s0
 /dev/ttyHS1                                  u:object_r:gps_device:s0
 
-# HBM
-/sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
-
-# Dolby
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                 u:object_r:hal_dms_default_exec:s0
-
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?               u:object_r:sysfs_battery_supply:s0
